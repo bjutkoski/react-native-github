@@ -34,7 +34,7 @@ export default function Main({ navigation }) {
       }
     }
     getItem();
-  }, []);
+  }, [setUsers]);
 
   useEffect(() => {
     AsyncStorage.setItem('users', JSON.stringify(users));
